@@ -90,8 +90,6 @@ class ReadPlans extends ReadCSV {
 
     rate = rate.replace('.', '')
 
-    // console.log(origRate, rate)
-
     return parseInt(rate)
   } 
 }
@@ -130,8 +128,6 @@ class SLCSP {
 
       slcsp.rate = this.formatCentsAsDollars(currentPlans[1].rate)
 
-      console.log(slcsp)
-
       return slcsp
     })
   }
@@ -160,8 +156,6 @@ class SLCSP {
     const formatted = numericCents.toString()
     const dollars = formatted.slice(0, formatted.length - 2)
     const cents = formatted.slice(formatted.length - 2, formatted.length)
-
-    console.log(numericCents, dollars, cents)
 
     return dollars + '.' + cents
   }
