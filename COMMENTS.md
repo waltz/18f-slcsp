@@ -4,14 +4,19 @@ These are instructions for building and using this tool. This tool calculates th
 
 ## Building
 
-0. This package is built using Node and NPM. Please make sure that these tools are available and installed on your system.
-1. Install the required dependencies with NPM. `$ npm install`
+This package requires Node and NPM. The Node ecosystem moves pretty fast and versions can get hard to manage. To make things easier, this app recommends using the included Dockerfile. If you'd prefer to use your local Node environment, it will work just as well.
+
+0. Make sure you have Docker installed and set up.
+1. Build the image:
+  
+    ```$ docker build -t slcsp:latest .```
+
 2. Fin! See the Usage section for usage instructions.
 
 ## Usage
 
-```$ npm run```
+```$ docker run -it slcsp:latest npm run default```
 
 This command reads the files `plans.csv` and `zips.csv` in the current directory. It sends output to `STDOUT` so that it can be easily redirected in to a file for later use.
 
-Ex: ```$ npm run > slcsp.csv```
+Ex: ```$ docker run -it slcsp:latest npm run default > slcsp.csv```
