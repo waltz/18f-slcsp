@@ -19,4 +19,4 @@ This package requires Node and NPM. The Node ecosystem moves pretty fast and ver
 
 This command reads the files `plans.csv` and `zips.csv` in the current directory. It sends output to `STDOUT` so that it can be easily redirected in to a file for later use.
 
-Ex: ```$ docker run -it slcsp:latest npm run default > slcsp.csv```
+Ex: ```$ docker run slcsp:latest > slcsp.csv```
