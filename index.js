@@ -1,3 +1,3 @@
 import SLCSP from './lib/slcsp.js'
 
-new SLCSP()
+new SLCSP().kickoff()
