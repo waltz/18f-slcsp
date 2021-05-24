@@ -5,11 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "default": "node index.js"
+    "default": "node index.js",
+    "test": "jasmine"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0"
   }
 }
